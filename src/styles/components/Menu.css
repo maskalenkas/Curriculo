@@ -1,0 +1,36 @@
+.menuContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menuContainer nav {
+  width: 100%;
+}
+
+.menuContainer ul {
+  list-style: none;
+  padding: 0;
+}
+.menuContainer li {
+  display: flex;
+}
+
+.menuContainer li a {
+  width: 100%;
+  background-color: var(--p5);
+  border-radius: 5rem;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 1.2rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: background-color 0.4s;
+}
+
+.menuContainer li a:hover {
+  border-radius: 5rem;
+  background-color: var(--p3);
+}

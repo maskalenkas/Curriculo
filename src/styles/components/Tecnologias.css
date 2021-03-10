@@ -1,0 +1,61 @@
+.TecnologiasContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: .5rem .5rem;
+  margin-bottom: 1rem;
+}
+
+.TecnologiasContainer h3 {
+  color: var(--p8);
+  margin-bottom: .2rem;
+  font-size: 2rem;
+}
+
+.TecnologiasContainer div {
+  display: flex;
+  width: 17rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+}
+
+.TecnologiasContainer .iconReact {
+  cursor: pointer;
+  color: var(--blue-twitter);
+}
+
+.TecnologiasContainer .iconJs {
+  cursor: pointer;
+  color: #FC7F30;
+}
+
+.TecnologiasContainer .iconCss3 {
+  cursor: pointer;
+  color: #15AABF;
+}
+
+.TecnologiasContainer .iconHtml5 {
+  cursor: pointer;
+  color: #4C70F5;
+}
+
+.TecnologiasContainer .iconNode {
+  cursor: pointer;
+  font-size: 3.5rem;
+  color: var(--green);
+}
+
+.TecnologiasContainer i {
+  position: relative;
+}
+
+.TecnologiasContainer i:hover {
+  top: -4px;
+  box-shadow: 0 4px 10px ;
+  transition: all .9s ease-in-out;
+  background: none;
+}

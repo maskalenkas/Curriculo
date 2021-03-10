@@ -1,0 +1,42 @@
+.redesSociaisContainer {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+  padding: .5rem .5rem;
+  margin-bottom: 1rem;
+}
+
+.redesSociaisContainer div {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.redesSociaisContainer .iconGitHub {
+  cursor: pointer;
+  color: #3B71BD;
+}
+
+.redesSociaisContainer .iconFacebook {
+  cursor: pointer;
+  color: #1673EB;
+}
+
+.redesSociaisContainer .iconLinkedin {
+  cursor: pointer;
+  color: #81CA35;
+}
+
+.redesSociaisContainer i {
+  position: relative;
+}
+
+.redesSociaisContainer i:hover {
+  top: -4px;
+  box-shadow: 0 4px 10px ;
+  transition: all .9s ease-in-out;
+  background: none;
+}
