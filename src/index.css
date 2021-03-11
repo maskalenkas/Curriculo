@@ -47,12 +47,18 @@ a {
 }
 
 @media(max-width: 1080px) {
+  :root {
+    font-size: 12px;
+  }
   html {
     font-size: 93.75%;
   }
 }
 
 @media(max-width: 720px) {
+  :root {
+    font-size: 11px;
+  }
   html {
     font-size: 87.5%;
   }

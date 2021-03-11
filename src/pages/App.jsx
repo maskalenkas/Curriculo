@@ -4,7 +4,6 @@ import React from 'react';
 import { Menu } from '../components/Menu';
 import { Profile } from '../components/Profile';
 import { RedesSociais } from '../components/RedesSociais';
-import { Tecnologias } from '../components/Tecnologias';
 import { Conteudo } from '../components/Conteudo';
 
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -16,7 +15,6 @@ function App() {
         {/* Left */}
         <aside>
           <Profile />
-          <Tecnologias />
           <Menu />
           <RedesSociais />
         </aside>
