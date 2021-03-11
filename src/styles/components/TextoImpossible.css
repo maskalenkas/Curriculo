@@ -1,0 +1,43 @@
+.textoImpossibleContainer {
+  margin-top: 1.5rem;
+}
+
+.textoImpossibleContainer h2 {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: #222;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.textoImpossibleContainer h2 span {
+  transition: 0.8s;
+}
+
+.textoImpossibleContainer h2:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+.textoImpossibleContainer h2:hover span:nth-child(1)::after {
+  content: "'";
+}
+
+.textoImpossibleContainer h2:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+
+.textoImpossibleContainer h2:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff,
+                0 0 160px #fff;
+  
+}
+
+@media (max-width: 1100px) {
+  .textoImpossibleContainer {
+    display: none;
+  }
+}

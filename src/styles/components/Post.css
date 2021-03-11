@@ -7,6 +7,10 @@
   justify-content: space-around;
 }
 
+.postContainer p {
+  color: black;
+}
+
 .postContainer .card {
   margin: 3.5rem 0;
   position: relative;
@@ -26,7 +30,7 @@
 
 .postContainer .card .face.face1 {
   border-radius: 10px;
-  background: #333;
+  background: var(--p1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +51,12 @@
 
 .postContainer .card:hover .face.face1 {
   transform: translateY(-100%) rotateX(90deg);
-  background: #ff0057;
+  background: var(--p6)
 }
 
 .postContainer .card .face.face2 {
   border-radius: 10px;
-  background: yellow;
+  background: var(--p8);
   display: flex;
   justify-content: center;
   align-items: center;

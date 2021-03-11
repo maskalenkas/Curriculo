@@ -1,5 +1,7 @@
 import '../styles/components/Profile.css';
 
+import { TextoImpossible } from './TextoImpossible';
+
 export function Profile() {
   return (
     <div className="profileContainer">
@@ -14,6 +16,8 @@ export function Profile() {
         <p>
           Web Developer <i className="fas fa-laptop-code"></i>{' '}
         </p>
+
+        <TextoImpossible />
       </div>
     </div>
   );
