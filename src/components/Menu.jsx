@@ -14,10 +14,7 @@ export function Menu() {
             <Link to="/sobre">Sobre mim</Link>
           </li>
           <li>
-            <Link to="/experiencia">Experiencia</Link>
-          </li>
-          <li>
-            <Link to="/portifolio">Portifolio</Link>
+            <Link to="/certificados">Certificados</Link>
           </li>
           <li>
             <Link to="/contato">Fale Comigo</Link>
