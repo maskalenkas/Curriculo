@@ -1,7 +1,16 @@
-.sobreContainer p {
-  color: black;
+.sobreContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.sobreContainer {
-  background-color: red;
+.sobreContainer .postsContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobreContainer > p {
+  background-color: white;
+  border-radius: 1rem;
+  font-weight: 1000;
 }

@@ -1,5 +1,7 @@
 import '../styles/pages/Sobre.css';
 
+import { Post } from '../components/Post';
+
 export default function Sobre() {
   return (
     <div className="sobreContainer">
@@ -16,6 +18,16 @@ export default function Sobre() {
       <p>Aqui vai um resumo das principais tecnologias que eu utilizo</p>
 
       {/* Ai vai os cards das tecnologias */}
+      <div className="postContainer">
+        <Post title="JS" img="javascript" body="O coração de tudo! Sem ele, não somos nada." />
+        <Post title="React" img="react" body="Meu FrameWork favorito para organizar e otimizar a pagina." />
+        <Post title="Css" img="css" body="O que falar dessa ferramenta sensacional? Simplesmente da vida as paginas!" />
+        <Post
+          title="HTML"
+          img="nodejs"
+          body="Muito eficiente em permite criar varias aplicações sem que eu saia do conforto do JS!"
+        />
+      </div>
     </div>
   );
 }
