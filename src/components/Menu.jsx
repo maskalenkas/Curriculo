@@ -1,6 +1,6 @@
 import '../styles/components/Menu.css';
 
-import { Link } from 'react-router-dom';
+import { ButtonNeon } from './ButtonNeon';
 
 export function Menu() {
   return (
@@ -8,16 +8,13 @@ export function Menu() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <ButtonNeon link="/" txt="home" />
           </li>
           <li>
-            <Link to="/sobre">Sobre mim</Link>
+            <ButtonNeon link="/sobre" txt="sobre mim" />
           </li>
           <li>
-            <Link to="/certificados">Certificados</Link>
-          </li>
-          <li>
-            <Link to="/contato">Fale Comigo</Link>
+            <ButtonNeon link="/fale" txt="fale comigo" />
           </li>
         </ul>
       </nav>

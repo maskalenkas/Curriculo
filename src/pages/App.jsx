@@ -3,7 +3,6 @@ import React from 'react';
 
 import { Menu } from '../components/Menu';
 import { Profile } from '../components/Profile';
-import { RedesSociais } from '../components/RedesSociais';
 import { Conteudo } from '../components/Conteudo';
 
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -16,7 +15,6 @@ function App() {
         <aside>
           <Profile />
           <Menu />
-          <RedesSociais />
         </aside>
 
         {/* Right */}

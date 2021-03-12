@@ -1,9 +1,9 @@
 .conteudoContainer {
   background-color: var(--p7);
   height: 99%;
-  padding: .4rem;
   margin: .5rem;
   border-radius: 2rem;
+  position: relative;
   
 }
 
