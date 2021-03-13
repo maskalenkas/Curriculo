@@ -9,7 +9,9 @@ export default function Home() {
           <p>
             o meu nome é <span>Arthur Maskalenkas</span>
           </p>
-          <p>E eu sou um Web Developer!</p>
+          <p>
+            E eu sou um <span>Web Developer</span>!
+          </p>
         </div>
       </div>
 

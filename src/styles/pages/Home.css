@@ -45,6 +45,12 @@
    
  }
 
+/* 
+*
+* Efeitos nas letras!
+*
+*/
+
 .conteudoPaginaContainer .textosPaginaContainer:hover span {
   color: #fff;
   text-shadow: 0 0 5px #fff,
@@ -53,13 +59,6 @@
                 0 0 40px #fff,
                 0 0 80px #fff;
 }
-
-/* 
-*
-* Efeitos nas letras!
-*
-*/
-
 
 /* 
 * Efeitos box!

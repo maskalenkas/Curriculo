@@ -29,6 +29,13 @@
   display: block;
 }
 
+
+/*
+*
+* BORDAS SEM O MENU SELECIONADO!
+*
+*/
+
 .buttonNeonContainer a span:nth-child(1){
   top: 0;
   left: -100%;
@@ -84,3 +91,20 @@
   transition: 1s;
   transition-delay: 0.75s ;
 }
+
+/*
+*
+* BORDAS COM O MENU SELECIONADO!
+*
+*/
+
+.buttonNeonContainer a.btnClicado  {
+  color: black;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+  transition: box-shadow 0s;
+ }
+
+ .buttonNeonContainer a.btnClicado:hover {
+  transition-delay: 0s;
+ } 
