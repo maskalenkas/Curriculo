@@ -22,4 +22,5 @@
 
 .container > main {
   grid-column: 2;
+  min-width: 120px;
 }

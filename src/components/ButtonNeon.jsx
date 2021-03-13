@@ -8,7 +8,7 @@ export function ButtonNeon({ link, txt, nameButton, nameGlobalButtonAtual, setNa
     setNameGlobalButtonAtual(nameButton);
   }
   return (
-    <div className="buttonNeonContainer">
+    <div className={nameButton != nameGlobalButtonAtual ? 'buttonNeonContainer' : 'buttonSelecionadoNeonContainer'}>
       <Link to={link} onClick={toggleButton} className={`${nameButton == nameGlobalButtonAtual && 'btnClicado'}`}>
         <span></span>
         <span></span>
