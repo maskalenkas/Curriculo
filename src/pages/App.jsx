@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile';
 import { Conteudo } from '../components/Conteudo';
 
 import { BrowserRouter as Router } from 'react-router-dom';
+import IconsSocialMedia from '../components/IconsSocialMedia';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <aside>
           <Profile />
           <Menu />
+          <IconsSocialMedia />
         </aside>
 
         {/* Right */}
