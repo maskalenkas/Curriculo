@@ -8,8 +8,8 @@ export default function Fale() {
   return (
     <div className="overlay">
       <div className="faleContainer">
-        <header> Entre em contato conosco! </header>
-        <p>Deseja entrar em contato?</p>
+        <header> Entre em contato comigo! </header>
+        <p>Coloque o seu Email e a mensagem, e assim que possivel eu responderei!</p>
         <button>
           <Link to="/">x</Link>
         </button>
