@@ -5,7 +5,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0;
 
   display: flex;
   justify-content: center;
@@ -13,5 +12,29 @@
 }
 
 .faleContainer {
-  background-color: yellow;
+  background: var(--white);
+  width: 100%;
+  max-width: 400px;
+  padding: .5rem 2rem 3rem;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.faleContainer header {
+  margin-bottom: 2rem;
+  font-weight: 1000;
+  color: black;
+  font-size: 1.5rem;
+}
+
+
+
+.faleContainer button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background: transparent;
+  border: 0;
+  font-size: 10px;
 }
