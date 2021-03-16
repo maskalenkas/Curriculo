@@ -1,3 +1,5 @@
+import '../styles/components/ContactForm.css';
+
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -7,16 +9,15 @@ export function ContactForm() {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <form action="https://formspree.io/f/xdopqbzb" method="POST">
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
-      <br></br>
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <textarea id="message" name="message" />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
-    </form>
+    <div className="contactContainer">
+      <h1>Entre em contato comigo!</h1>
+      <form action="/" className="contact-form">
+        <input type="text" className="contact-form-text" placeholder=" Seu nome" />
+        <input type="text" className="contact-form-text" placeholder="Seu Email" />
+        <input type="text" className="contact-form-text" placeholder="Seu celular" />
+        <textarea className="contact-form-text" placeholder="Sua mensagem"></textarea>
+        <input type="submit" className="contact-form-btn" value="Enviar" />
+      </form>
+    </div>
   );
 }
