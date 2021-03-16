@@ -2,6 +2,8 @@ import '../styles/pages/Fale.css';
 
 import { Link } from 'react-router-dom';
 
+import { ContactForm } from '../components/ContactForm';
+
 export default function Fale() {
   return (
     <div className="overlay">
@@ -11,6 +13,7 @@ export default function Fale() {
         <button>
           <Link to="/">x</Link>
         </button>
+        <ContactForm />
       </div>
     </div>
   );
