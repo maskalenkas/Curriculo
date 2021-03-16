@@ -1,8 +1,17 @@
 import '../styles/pages/Sobre.css';
 
 import { Post } from '../components/Post';
+import { useContext, useEffect } from 'react';
+
+import { MenuContext } from '../context/MenuContext';
 
 export default function Sobre() {
+  const { buttonAtual, setButtonAtual } = useContext(MenuContext);
+
+  useEffect(() => {
+    setButtonAtual('btn2');
+  }, [setButtonAtual]);
+
   return (
     <div className="sobreContainer">
       <div className="biografiaContainer">

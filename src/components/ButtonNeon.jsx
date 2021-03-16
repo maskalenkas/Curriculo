@@ -2,15 +2,21 @@ import '../styles/components/ButtonNeon.css';
 import P from 'prop-types';
 
 import { Link } from 'react-router-dom';
+import { MenuContext } from '../context/MenuContext';
+import { useContext } from 'react';
 
-export function ButtonNeon({ link, txt, nameButton, nameGlobalButtonAtual, setNameGlobalButtonAtual }) {
+export function ButtonNeon({ link, txt, nameButton }) {
+  const { buttonAtual, setButtonAtual } = useContext(MenuContext);
+
   function toggleButton() {
-    setNameGlobalButtonAtual(nameButton);
+    setButtonAtual(nameButton);
   }
 
+  const isButtonAtual = nameButton != buttonAtual ? 'buttonNeonContainer' : 'buttonSelecionadoNeonContainer';
+
   return (
-    <div className={nameButton != nameGlobalButtonAtual ? 'buttonNeonContainer' : 'buttonSelecionadoNeonContainer'}>
-      <Link to={link} onClick={toggleButton} className={`${nameButton == nameGlobalButtonAtual && 'btnClicado'}`}>
+    <div className={isButtonAtual}>
+      <Link to={link} onClick={toggleButton} className={`${nameButton == buttonAtual && 'btnClicado'}`}>
         <span></span>
         <span></span>
         <span></span>
@@ -25,6 +31,4 @@ ButtonNeon.propTypes = {
   link: P.string.isRequired,
   txt: P.string.isRequired,
   nameButton: P.string.isRequired,
-  nameGlobalButtonAtual: P.string.isRequired,
-  setNameGlobalButtonAtual: P.func.isRequired,
 };

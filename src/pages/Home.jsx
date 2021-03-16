@@ -1,6 +1,15 @@
 import '../styles/pages/Home.css';
 
+import { useContext, useEffect } from 'react';
+import { MenuContext } from '../context/MenuContext';
+
 export default function Home() {
+  const { buttonAtual, setButtonAtual } = useContext(MenuContext);
+
+  useEffect(() => {
+    setButtonAtual('btn1');
+  }, [setButtonAtual]);
+
   return (
     <div className="homeContainer">
       <div className="conteudoPaginaContainer">
