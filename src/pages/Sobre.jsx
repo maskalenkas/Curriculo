@@ -20,6 +20,7 @@ export default function Sobre() {
       {/* Ai vai os cards das tecnologias */}
 
       <h1> Tecnologias que eu utilizo no dia a dia </h1>
+      {/* COloca nextjs e typescript */}
       <div className="postContainer">
         <Post title="JS" img="javascript" body="O coração de tudo! Sem ele, não somos nada." />
         <Post title="React" img="react" body="Meu FrameWork favorito para organizar e otimizar a pagina." />
