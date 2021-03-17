@@ -1,6 +1,6 @@
 .conteudoContainer {
   background-color: var(--p7);
-  height: 99%;
-  margin: .5rem;
+  height: 100%;
+  margin: 0 .5rem;
   position: relative;
 }

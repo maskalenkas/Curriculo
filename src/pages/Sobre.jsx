@@ -21,8 +21,8 @@ export default function Sobre() {
         </p>
 
         <p>
-          Sou um profissional muito dedicado, empenhado e organizado, e em constante evolução. Estou em busca da minha
-          primeira oportunidade como desenvolvedor Web.
+          Sou uma pessoa muito dedicada, empenhada e organizada, e em constante evolução. Estou em busca da minha
+          primeira oportunidade como desenvolvedor.
         </p>
       </div>
 
