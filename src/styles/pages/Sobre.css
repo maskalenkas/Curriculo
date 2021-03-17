@@ -4,11 +4,6 @@
   flex-direction: column;
 }
 
-.sobreContainer .postsContent {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .sobreContainer .biografiaContainer {
   padding: .8rem;
   color: black;
@@ -16,6 +11,11 @@
   background-color: var(--p8);
   border-radius: 1rem;
   font-weight: 1000;
+}
+
+.sobreContainer .postContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sobreContainer h1 {
