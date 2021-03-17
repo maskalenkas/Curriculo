@@ -15,10 +15,7 @@ export function Menu() {
             <ButtonNeon link="/sobre" txt="sobre mim" nameButton="btn2" />
           </li>
           <li>
-            <ButtonNeon link="/fale" txt="fale comigo" nameButton="btn3" />
-          </li>
-          <li>
-            <ButtonNeon link="/portfolio" txt="Portfólio" nameButton="btn4" />
+            <ButtonNeon link="/portfolio" txt="Portfólio" nameButton="btn3" />
           </li>
         </ul>
       </nav>

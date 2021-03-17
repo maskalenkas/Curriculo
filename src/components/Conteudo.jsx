@@ -15,7 +15,6 @@ export function Conteudo() {
       <Switch>
         <Route exact path={ROUTES.HOME} component={Home} />
         <Route path={ROUTES.SOBRE} component={Sobre} />
-        <Route path={ROUTES.FALE} component={Fale} />
         <Route path={ROUTES.PORTFOLIO} component={Portfolio} />
       </Switch>
     </div>

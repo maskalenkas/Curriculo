@@ -8,7 +8,7 @@ export default function Portfolio() {
   const { buttonAtual, setButtonAtual } = useContext(MenuContext);
 
   useEffect(() => {
-    setButtonAtual('btn4');
+    setButtonAtual('btn3');
   }, [setButtonAtual]);
 
   return (
