@@ -1,6 +1,6 @@
 .cardProjectsContainer {
   display: grid;
-  height: 20rem;
+  height: 30rem;
   width: 70%;
   margin: auto;
 
@@ -19,7 +19,8 @@
 
 .cardProjectsContainer .card-image{
   grid-area: image;
-  
+  background-position: center;                                                
+
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;

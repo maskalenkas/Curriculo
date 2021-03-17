@@ -17,10 +17,26 @@ export default function Portfolio() {
         <h1>Projetos desenvolvidos</h1>
       </div>
       <div className="projetosContainer">
-        <CardProject title="MOVEIT!" txt="Aplicação desenvolvida com React e NextJS pela plataforma Rockseat" />
+        <CardProject
+          title="MOVEIT!"
+          txt="Aplicação desenvolvida com React e NextJS pela plataforma Rockseat"
+          img="NLW4"
+        />
         <CardProject
           title="Jogo da memoria"
           txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+          img="memoria"
+        />
+
+        <CardProject
+          title="Tela inicial do Instagram"
+          txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+          img="instagram"
+        />
+        <CardProject
+          title="Tela inicial do Netflix"
+          txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+          img="netflix"
         />
       </div>
     </div>
