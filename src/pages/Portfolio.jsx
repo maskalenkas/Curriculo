@@ -10,15 +10,12 @@ export default function Portfolio() {
   useEffect(() => {
     setButtonAtual('btn4');
   }, [setButtonAtual]);
+
   return (
     <div className="portfolioContainer">
+      <div className="portfolioTexto"></div>
       <div className="projetosContainer">
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
+        <CardProject title="MOVEIT!" txt="Aplicação desenvolvida com React e NextJS pela plataforma Rockseat" />
       </div>
     </div>
   );

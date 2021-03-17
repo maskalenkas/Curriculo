@@ -19,7 +19,7 @@
 
 .cardProjectsContainer .card-image{
   grid-area: image;
-  background: red;
+  
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -30,13 +30,14 @@ grid-area: text;
 }
 
 .cardProjectsContainer .card-text p {
-  color: grey;
-  font-size: 1rem;
+  color: var(--p2);
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
 .cardProjectsContainer .card-text h2 {
   font-size: 2.5rem;
+  color: var(--title)
 }
 .cardProjectsContainer:hover {
   transform: scale(1.1);
