@@ -24,21 +24,14 @@ export default function Sobre() {
           Sou uma pessoa muito dedicada, empenhada e organizada, e em constante evolução. Estou em busca da minha
           primeira oportunidade como desenvolvedor.
         </p>
+        <h1> Tecnologias que eu utilizo no dia a dia </h1>
       </div>
 
       {/* Ai vai os cards das tecnologias */}
 
-      <h1> Tecnologias que eu utilizo no dia a dia </h1>
       {/* COloca nextjs e typescript */}
       <div className="postContainer">
         <Post title="JS" img="javascript" body="O coração de tudo! Sem ele, não somos nada." />
-        <Post title="React" img="react" body="Meu FrameWork favorito para organizar e otimizar a pagina." />
-        <Post title="Css" img="css" body="O que falar dessa ferramenta sensacional? Simplesmente da vida as paginas!" />
-        <Post
-          title="HTML"
-          img="nodejs"
-          body="Muito eficiente em permite criar varias aplicações sem que eu saia do conforto do JS!"
-        />
       </div>
     </div>
   );

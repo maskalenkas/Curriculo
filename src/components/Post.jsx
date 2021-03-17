@@ -3,18 +3,19 @@ import P from 'prop-types';
 
 export function Post({ title, img, body }) {
   return (
-    <div className="card">
-      <div className="face face1">
-        <div className="content">
-          <img src={`img/icons/${img}.png`} alt="" />
-          <h3>{title}</h3>
+    <div className="cardTecnologiasContainer">
+      <div className="card">
+        <div className="face face1">
+          <div className="content">
+            <img src="/img/icons/javascript.png" alt="" />
+            <h3>Data</h3>
+          </div>
         </div>
-      </div>
-      <div className="face face2">
-        <div className="content">
-          <p>
-            <strong>{body}</strong>
-          </p>
+        <div className="face face2">
+          <div className="content">
+            <p>Texto da imagem</p>
+            <a href="#">Veja mais</a>
+          </div>
         </div>
       </div>
     </div>
