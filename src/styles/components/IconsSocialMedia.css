@@ -76,6 +76,17 @@
   height: 100%;
 }
 
+.iconsSocialMediaContainer ul li:nth-child(4)::before {
+  content: '\f232';
+  color: #4FCB5B;
+  border-bottom: 4px solid #4FCB5B
+}
+
+.iconsSocialMediaContainer ul li:hover::before {
+  height: 100%;
+}
+
+
 
 @media (max-width:850px) {
   .iconsSocialMediaContainer ul {
