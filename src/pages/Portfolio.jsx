@@ -12,12 +12,14 @@ export default function Portfolio() {
   }, [setButtonAtual]);
   return (
     <div className="portfolioContainer">
-      <CardProject />
-      <CardProject />
-      <CardProject />
-      <CardProject />
-      <CardProject />
-      <CardProject />
+      <div className="projetosContainer">
+        <CardProject />
+        <CardProject />
+        <CardProject />
+        <CardProject />
+        <CardProject />
+        <CardProject />
+      </div>
     </div>
   );
 }

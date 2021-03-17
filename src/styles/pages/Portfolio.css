@@ -1,15 +1,17 @@
 .portfolioContainer {
+  
+}
+
+.portfolioContainer .projetosContainer{
   display: grid;
   padding: 1rem;
 
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-
-  
+  gap: 3rem 1rem;
 }
 
 @media (max-width:700px) {
-  .portfolioContainer {
+  .portfolioContainer .projetosContainer {
     grid-template-columns: 1fr;
   }
 }

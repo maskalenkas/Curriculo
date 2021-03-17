@@ -1,7 +1,8 @@
 .cardProjectsContainer {
   display: grid;
   height: 20rem;
-  
+  width: 70%;
+  margin: auto;
 
   grid-template-rows: 60% 40%;
 
@@ -26,7 +27,6 @@
 
 .cardProjectsContainer .card-text {
 grid-area: text;
-margin: 25px;
 }
 
 .cardProjectsContainer .card-text p {
@@ -36,10 +36,9 @@ margin: 25px;
 }
 
 .cardProjectsContainer .card-text h2 {
-  margin-top: 0px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .cardProjectsContainer:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
