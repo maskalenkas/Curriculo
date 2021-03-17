@@ -7,12 +7,13 @@
   flex-direction: column;
   text-align: center;
 
-  height: 70%;
+  height: 60%;
   width: 100%;
   max-width: 500px;
+  min-height: 370px;
 
   border-radius: 10px;
-  padding: 3rem;
+  padding: 1rem;
   margin: 10px;
 }
 
@@ -52,7 +53,7 @@ textarea.contact-form-text {
 
 .contact-form-btn {
   border: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background: #34495e;
   color: #fff;
   padding: 12px 50px;
@@ -65,8 +66,19 @@ textarea.contact-form-text {
   background: #2980b9;
 }
 
-@media (max-width:720px) {
-  .contactContainer{
-    height: 65%;
-  }
+.contactContainer button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background: transparent;
+  border: 0;
+  font-size: 10px;
+  
 }
+
+.contactContainer a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+}
+

@@ -17,6 +17,9 @@ export function ContactForm() {
         <input type="text" className="contact-form-text" placeholder="Seu celular" />
         <textarea className="contact-form-text" placeholder="Sua mensagem"></textarea>
         <input type="submit" className="contact-form-btn" value="Enviar" />
+        <button>
+          <a href="/">X</a>
+        </button>
       </form>
     </div>
   );
