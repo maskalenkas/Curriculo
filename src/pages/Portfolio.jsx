@@ -13,9 +13,15 @@ export default function Portfolio() {
 
   return (
     <div className="portfolioContainer">
-      <div className="portfolioTexto"></div>
+      <div className="textoContainer">
+        <h1>Projetos desenvolvidos</h1>
+      </div>
       <div className="projetosContainer">
         <CardProject title="MOVEIT!" txt="Aplicação desenvolvida com React e NextJS pela plataforma Rockseat" />
+        <CardProject
+          title="Jogo da memoria"
+          txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+        />
       </div>
     </div>
   );
