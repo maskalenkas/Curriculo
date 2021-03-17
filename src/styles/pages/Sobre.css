@@ -15,13 +15,11 @@
   color: black;
   font-size: 1.2rem;
   background-color: var(--p8);
-  border-radius: 1rem;
   font-weight: 1000;
 }
 
 .sobreContainer .postContainer {
   display: flex;
-  background-color: red;
   width: 100%;
   flex-wrap: wrap;
 }

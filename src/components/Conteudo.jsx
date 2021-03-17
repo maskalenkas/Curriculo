@@ -1,6 +1,7 @@
 import Home from '../pages/Home';
 import Sobre from '../pages/Sobre';
 import Fale from '../pages/Fale';
+import Portfolio from '../pages/Portfolio';
 
 import * as ROUTES from '../Routes/routes';
 
@@ -15,6 +16,7 @@ export function Conteudo() {
         <Route exact path={ROUTES.HOME} component={Home} />
         <Route path={ROUTES.SOBRE} component={Sobre} />
         <Route path={ROUTES.FALE} component={Fale} />
+        <Route path={ROUTES.PORTFOLIO} component={Portfolio} />
       </Switch>
     </div>
   );
