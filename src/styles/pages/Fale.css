@@ -14,12 +14,15 @@
 .faleContainer {
   position: relative;
   width: 100%;
+  margin: 10px;
   max-width: 500px;
-  height: 100%;
+  height: 60%;
   border-radius: 10px;
   text-align: center;
 }
 
+
+/* Botao de fechar */
 .faleContainer button {
   position: absolute;
   right: 0.5rem;

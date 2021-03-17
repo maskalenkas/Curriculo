@@ -4,7 +4,6 @@
   display: flex;
   height: 100%;
   flex-direction: column;
-  padding: 40px 0;
   border-radius: 10px;
   background-size: cover;
 }
@@ -12,13 +11,13 @@
 .contactContainer h1 {
   text-align: center;
   color: #ddd;
-  margin-bottom: 10px;
 }
 
 .contact-form {
   max-width: 600px;
   margin: auto;
   padding: 0 10px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -26,10 +25,10 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  margin: 16px 0;
+  margin: 1rem 0;
   border: 0;
   background: #111;
-  padding: 20px 40px;
+  padding: 1rem 3rem;
   outline: none;
   color: #ddd;
 }
@@ -55,4 +54,10 @@ textarea.contact-form-text {
 
 .contact-form-btn:hover {
   background: #2980b9;
+}
+
+@media (max-width:720px) {
+  .contactContainer{
+    
+  }
 }

@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.sobreContainer h1 {
+  margin: 3rem 0px 0px 0px;
+  font-weight: 1000;
+  color: var(--p1);
+}
+
 .sobreContainer .biografiaContainer {
   padding: .8rem;
   color: black;
@@ -15,11 +21,7 @@
 
 .sobreContainer .postContainer {
   display: flex;
+  background-color: red;
+  width: 100%;
   flex-wrap: wrap;
-}
-
-.sobreContainer h1 {
-  margin: 3rem 0px 0px 0px;
-  font-weight: 1000;
-  color: var(--p1);
 }
