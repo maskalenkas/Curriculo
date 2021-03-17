@@ -18,11 +18,6 @@ export default function IconsSocialMedia() {
             <i className="fa fa-github-square" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
         <li onClick={redirectWhatsapp}>
           <a href="#">
             <i className="fa fa-whatsapp" aria-hidden="true"></i>
