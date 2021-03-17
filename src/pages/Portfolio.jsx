@@ -13,6 +13,11 @@ export default function Portfolio() {
   return (
     <div className="portfolioContainer">
       <CardProject />
+      <CardProject />
+      <CardProject />
+      <CardProject />
+      <CardProject />
+      <CardProject />
     </div>
   );
 }

@@ -1,3 +1,45 @@
 .cardProjectsContainer {
+  display: grid;
+  height: 20rem;
   
+
+  grid-template-rows: 60% 40%;
+
+  grid-template-areas: "image" "text";
+  font-family: roboto;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.cardProjectsContainer .card-image{
+  grid-area: image;
+  background: red;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.cardProjectsContainer .card-text {
+grid-area: text;
+margin: 25px;
+}
+
+.cardProjectsContainer .card-text p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.cardProjectsContainer .card-text h2 {
+  margin-top: 0px;
+  font-size: 2rem;
+}
+.cardProjectsContainer:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
