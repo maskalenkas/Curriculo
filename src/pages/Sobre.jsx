@@ -46,6 +46,8 @@ export default function Sobre() {
           body="Um framework essencial na construção de sites. É com ele que eu vou indexar o seu projeto no Google!"
         />
         <Post title="Typescript" img="typescript" body="É o que eu uso para dar super poderes ao JS." />
+        <Post title="MySql" img="mysql" body="É o meu principal banco de dados" />
+        <Post title="ESLint" img="eslint" body="Uso muito para deixar o codigo bem organizado e legivel." />
       </div>
     </div>
   );
