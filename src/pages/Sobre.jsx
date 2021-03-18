@@ -24,8 +24,8 @@ export default function Sobre() {
           Sou uma pessoa muito dedicada, empenhada e organizada, e em constante evolução. Estou em busca da minha
           primeira oportunidade como desenvolvedor.
         </p>
-        <h1> Tecnologias que eu utilizo no dia a dia </h1>
       </div>
+      <h1> Tecnologias que eu utilizo no dia a dia </h1>
 
       {/* Ai vai os cards das tecnologias */}
 
