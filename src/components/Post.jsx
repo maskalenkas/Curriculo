@@ -21,7 +21,7 @@ export function Post({ title, img, body }) {
         <div className="face face2">
           <div className="content">
             <p>{body}</p>
-            <a href="#">Veja mais</a>
+            {/* Espaço para link */}
           </div>
         </div>
       </div>
