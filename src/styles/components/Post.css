@@ -15,7 +15,7 @@
 
 .cardTecnologiasContainer .card .face.face1{
   position: relative;
-  background: #333;
+  background: var(--p5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
 
 .cardTecnologiasContainer .card:hover .face.face1{
   transform: translateY(0px);
-  background: #009c9c;
+  background: var(--p7)
 }
 
 .cardTecnologiasContainer .card .face.face1 .content{
@@ -66,6 +66,8 @@
 }
 .cardTecnologiasContainer .card .face.face2 .content p{
   margin: 0;
+  color: black;
+  font-size: 1.5rem;
   padding: 0;
 }
 

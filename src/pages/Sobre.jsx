@@ -38,7 +38,7 @@ export default function Sobre() {
           img="css"
           body="O que falar dessa ferramenta sensacional? Simplesmente da vida as minhas paginas!"
         />
-        <Post title="HTML" img="nodejs" body="O esqueleto de todo projeto." />
+        <Post title="HTML" img="nodejs" body="A minha combinação preferida junto a JS." />
         <Post title="GIT" img="git" body="Me permite versionar e organizar o projeto." />
         <Post
           title="NextJS"
