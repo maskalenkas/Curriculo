@@ -1,7 +1,8 @@
 .portfolioContainer {
-  padding: 1rem;
+  padding: 1rem 0;
   background: var(--p8);
   height: 102%;
+
 }
 
 .portfolioContainer .textoContainer {
