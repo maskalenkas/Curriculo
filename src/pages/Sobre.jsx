@@ -32,6 +32,13 @@ export default function Sobre() {
       {/* COloca nextjs e typescript */}
       <div className="postContainer">
         <Post title="JS" img="javascript" body="O coração de tudo! Sem ele, não somos nada." />
+        <Post title="React" img="react" body="Meu FrameWork favorito para organizar e otimizar a pagina." />
+        <Post title="Css" img="css" body="O que falar dessa ferramenta sensacional? Simplesmente da vida as paginas!" />
+        <Post
+          title="HTML"
+          img="nodejs"
+          body="Muito eficiente em permite criar varias aplicações sem que eu saia do conforto do JS!"
+        />
       </div>
     </div>
   );

@@ -22,7 +22,20 @@
 }
 
 .sobreContainer .postContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0rem;
   width: 100%;
-  flex-wrap: wrap;
+}
+
+@media (max-width:750px) {
+  .sobreContainer .postContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:520px) {
+  .sobreContainer .postContainer {
+    grid-template-columns: 1fr;
+  }
 }
