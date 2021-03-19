@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './pages/App';
 
+import MenuProvider from './context/MenuContext';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MenuProvider>
+      <App />
+    </MenuProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

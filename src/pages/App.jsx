@@ -1,5 +1,5 @@
 import '../styles/pages/App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import MenuProvider from '../context/MenuContext';
 
@@ -11,24 +11,29 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import IconsSocialMedia from '../components/IconsSocialMedia';
 
 function App() {
-  return (
-    <MenuProvider>
-      <Router>
-        <div className="container">
-          {/* Left */}
-          <aside>
-            <Profile />
-            <Menu />
-            <IconsSocialMedia />
-          </aside>
+  console.log(window.screen.width);
+  console.log(window.screen.height);
 
-          {/* Right */}
-          <main>
-            <Conteudo />
-          </main>
-        </div>
-      </Router>
-    </MenuProvider>
+  useEffect(() => {
+    //window.screen.width < 500 &&
+  }, []);
+
+  return (
+    <Router>
+      <div className="container">
+        {/* Left */}
+        <aside>
+          <Profile />
+          <Menu />
+          <IconsSocialMedia />
+        </aside>
+
+        {/* Right */}
+        <main>
+          <Conteudo />
+        </main>
+      </div>
+    </Router>
   );
 }
 
