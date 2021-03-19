@@ -6,7 +6,7 @@ export const MenuContext = createContext();
 export default function MenuProvider({ children }) {
   const [buttonAtual, setButtonAtual] = useState(0);
   const [isCelular, setIsCelular] = useState();
-  const [menuIsOn, setMenuIsOn] = useState();
+  const [menuIsOn, setMenuIsOn] = useState(true);
 
   return (
     <MenuContext.Provider value={{ buttonAtual, setButtonAtual, isCelular, setIsCelular, menuIsOn, setMenuIsOn }}>

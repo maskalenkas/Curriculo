@@ -37,7 +37,7 @@ function App() {
               <Profile />
               <Menu />
               <IconsSocialMedia />
-              <Hamburguer />
+              {isCelular && <Hamburguer />}
             </>
           )}
         </aside>
