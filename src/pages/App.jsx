@@ -15,7 +15,7 @@ function App() {
   console.log(window.screen.width);
   console.log(window.screen.height);
 
-  const { setIsCelular, isCelular } = useContext(MenuContext);
+  const { setIsCelular, isCelular, menuIsOn, setMenuIsOn } = useContext(MenuContext);
 
   // Definindo que é tela de celular
   useEffect(() => {
@@ -23,14 +23,22 @@ function App() {
   }, [setIsCelular]);
 
   return (
+    // iscelular sempre vai ficar ativo, não vai mudar, ja o menu vai renderizar os componentes conforme o estado
+
+    // Eu vou ter que colocar a grid do conteudo para ocupar 100% do espaço quando o menuIsOn estiver false
     <Router>
       <div className="container">
         {/* Left */}
-        <aside>
-          {isCelular && <Hamburguer />}
-          <Profile />
-          <Menu />
-          <IconsSocialMedia />
+        <aside className={`menuIsOn`}>
+          {isCelular && !menuIsOn ? (
+            <Hamburguer />
+          ) : (
+            <>
+              <Profile />
+              <Menu />
+              <IconsSocialMedia />
+            </>
+          )}
         </aside>
 
         {/* Right */}
