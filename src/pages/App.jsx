@@ -34,7 +34,7 @@ function App() {
             <Hamburguer />
           ) : (
             <>
-              <Hamburguer />
+              {isCelular && <Hamburguer />}
               <Profile />
               <Menu />
               <IconsSocialMedia />
