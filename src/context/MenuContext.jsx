@@ -8,7 +8,11 @@ export default function MenuProvider({ children }) {
   const [isCelular, setIsCelular] = useState();
   const [menuIsOn, setMenuIsOn] = useState();
 
-  return <MenuContext.Provider value={{ buttonAtual, setButtonAtual }}>{children}</MenuContext.Provider>;
+  return (
+    <MenuContext.Provider value={{ buttonAtual, setButtonAtual, isCelular, setIsCelular, menuIsOn, setMenuIsOn }}>
+      {children}
+    </MenuContext.Provider>
+  );
 }
 
 MenuProvider.propTypes = {

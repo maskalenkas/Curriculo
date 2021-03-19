@@ -1,7 +1,7 @@
 import '../styles/pages/App.css';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
-import MenuProvider from '../context/MenuContext';
+import { MenuContext } from '../context/MenuContext';
 
 import { Menu } from '../components/Menu';
 import { Profile } from '../components/Profile';
@@ -14,9 +14,12 @@ function App() {
   console.log(window.screen.width);
   console.log(window.screen.height);
 
+  const { setIsCelular } = useContext(MenuContext);
+
+  // Definindo que é tela de celular
   useEffect(() => {
-    //window.screen.width < 500 &&
-  }, []);
+    window.screen.width < 600 && setIsCelular(true);
+  }, [setIsCelular]);
 
   return (
     <Router>
