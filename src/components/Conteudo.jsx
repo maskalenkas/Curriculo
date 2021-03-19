@@ -7,11 +7,18 @@ import * as ROUTES from '../Routes/routes';
 
 import '../styles/components/Conteudo.css';
 
+import { MenuContext } from '../context/MenuContext';
+
 import { Route, Switch } from 'react-router-dom';
+import { Hamburguer } from './Hamburguer';
+import { useContext } from 'react';
 
 export function Conteudo() {
+  const { menuIsOn } = useContext(MenuContext);
+
   return (
     <div className="conteudoContainer">
+      {!menuIsOn && <Hamburguer />}
       <Switch>
         <Route exact path={ROUTES.HOME} component={Home} />
         <Route path={ROUTES.SOBRE} component={Sobre} />

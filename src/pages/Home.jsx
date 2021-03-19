@@ -1,10 +1,16 @@
 import '../styles/pages/Home.css';
 
+//*
+//*  Hamburguer nessa pagina é gambiarra!
+//*
+
 import { useContext, useEffect } from 'react';
 import { MenuContext } from '../context/MenuContext';
 
+import { Hamburguer } from '../components/Hamburguer';
+
 export default function Home() {
-  const { buttonAtual, setButtonAtual } = useContext(MenuContext);
+  const { buttonAtual, setButtonAtual, menuIsOn } = useContext(MenuContext);
 
   useEffect(() => {
     setButtonAtual('btn1');
@@ -12,6 +18,7 @@ export default function Home() {
 
   return (
     <div className="homeContainer">
+      {!menuIsOn && <Hamburguer />}
       <div className="conteudoPaginaContainer">
         <div className="textosPaginaContainer">
           <h1>Bem vindo</h1>
@@ -38,12 +45,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="textoContainer">
-<h1>Seja bem vindo!</h1>
-<h2> Meu nome é Arthur Maskalenkas</h2>
-<h2>E hoje vou apresentar um pouco do meu trabalho como Web Developer!</h2>
-</div> */
 }
