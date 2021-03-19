@@ -29,7 +29,7 @@ function App() {
     <Router>
       <div className="container">
         {/* Left */}
-        <aside className={`menuIsOn`}>
+        <aside className={`${menuIsOn && 'menuIsOn'}`}>
           {isCelular && !menuIsOn ? (
             <Hamburguer />
           ) : (
@@ -37,6 +37,7 @@ function App() {
               <Profile />
               <Menu />
               <IconsSocialMedia />
+              <Hamburguer />
             </>
           )}
         </aside>
