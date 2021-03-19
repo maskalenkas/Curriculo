@@ -29,11 +29,11 @@ function App() {
 
     // VOu ter que elimnar o menu e fazer o conteudo ocupar 10 de espaço caso menu esteja off
     <Router>
-      <div className="container">
+      <div className={`${menuIsOn ? 'container' : 'containerMenuIsOff'}`}>
         {/* Left */}
         <aside className={`${menuIsOn && 'menuIsOn'}`}>
           {isCelular && !menuIsOn ? (
-            <Hamburguer />
+            true
           ) : (
             <>
               {isCelular && <Hamburguer />}

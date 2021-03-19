@@ -13,7 +13,7 @@ export function Hamburguer() {
 
   return (
     <div className="hamburguerContainer">
-      <p onClick={handleButton}>oi</p>
+      <p onClick={handleButton}>HAMBURGUER</p>
     </div>
   );
 }
