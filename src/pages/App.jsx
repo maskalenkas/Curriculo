@@ -6,6 +6,7 @@ import { MenuContext } from '../context/MenuContext';
 import { Menu } from '../components/Menu';
 import { Profile } from '../components/Profile';
 import { Conteudo } from '../components/Conteudo';
+import { Hamburguer } from '../components/Hamburguer';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import IconsSocialMedia from '../components/IconsSocialMedia';
@@ -14,7 +15,7 @@ function App() {
   console.log(window.screen.width);
   console.log(window.screen.height);
 
-  const { setIsCelular } = useContext(MenuContext);
+  const { setIsCelular, isCelular } = useContext(MenuContext);
 
   // Definindo que é tela de celular
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <div className="container">
         {/* Left */}
         <aside>
+          {isCelular && <Hamburguer />}
           <Profile />
           <Menu />
           <IconsSocialMedia />
