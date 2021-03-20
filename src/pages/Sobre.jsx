@@ -25,7 +25,7 @@ export default function Sobre() {
           primeira oportunidade como desenvolvedor.
         </p>
       </div>
-      <h1> Tecnologias que eu utilizo no dia a dia </h1>
+      <h1>Conhecimentos </h1>
 
       {/* Ai vai os cards das tecnologias */}
 

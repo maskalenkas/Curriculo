@@ -2,6 +2,8 @@
   background: var(--p8);
   text-align: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -10,6 +12,7 @@
   font-weight: 1000;
   color: var(--p1);
   margin-bottom: 5px;
+  border-bottom: 1px solid var(--p6);
 }
 
 .sobreContainer .biografiaContainer {
@@ -22,6 +25,10 @@
   font-size: 1.2rem;
 
   font-weight: 1000;
+}
+
+.sobreContainer .biografiaContainer p:nth-child(1) {
+  margin-bottom: 1rem;
 }
 
 .sobreContainer .postContainer {
