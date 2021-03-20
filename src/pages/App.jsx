@@ -36,7 +36,11 @@ function App() {
               <IconsSocialMedia />
             </>
           ) : (
-            false
+            <>
+              <Profile />
+              <Menu />
+              <IconsSocialMedia />
+            </>
           )}
         </aside>
 
