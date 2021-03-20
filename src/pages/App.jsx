@@ -24,7 +24,8 @@ function App() {
 
   return (
     <Router>
-      <div className={`${menuIsOn ? 'container' : 'containerMenuIsOff'}`}>
+      {/* Removendo o menu esquerdo caso ele esteja como off */}
+      <div className={`${menuIsOn ? 'container' : ''}`}>
         {/* Left */}
         <aside className={`${menuIsOn && 'menuIsOn'}`}>
           {isCelular && menuIsOn ? (
