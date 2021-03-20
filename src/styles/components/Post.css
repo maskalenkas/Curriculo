@@ -1,6 +1,7 @@
 .cardTecnologiasContainer{
   margin: auto;
   width: 80%;
+  cursor: pointer;
 }
 
 .cardTecnologiasContainer .card{
