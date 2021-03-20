@@ -23,24 +23,19 @@ function App() {
   }, [setIsCelular]);
 
   return (
-    // iscelular sempre vai ficar ativo, não vai mudar, ja o menu vai renderizar os componentes conforme o estado
-
-    // Eu vou ter que colocar a grid do conteudo para ocupar 100% do espaço quando o menuIsOn estiver false
-
-    // VOu ter que elimnar o menu e fazer o conteudo ocupar 10 de espaço caso menu esteja off
     <Router>
       <div className={`${menuIsOn ? 'container' : 'containerMenuIsOff'}`}>
         {/* Left */}
         <aside className={`${menuIsOn && 'menuIsOn'}`}>
-          {isCelular && !menuIsOn ? (
-            true
-          ) : (
+          {isCelular && menuIsOn ? (
             <>
               {isCelular && <Hamburguer />}
               <Profile />
               <Menu />
               <IconsSocialMedia />
             </>
+          ) : (
+            false
           )}
         </aside>
 
