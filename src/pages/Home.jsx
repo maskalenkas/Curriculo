@@ -18,7 +18,6 @@ export default function Home() {
 
   return (
     <div className="homeContainer">
-      {console.log('Componente home!')}
       {!menuIsOn && <Hamburguer />}
       <div className="conteudoPaginaContainer">
         <div className="textosPaginaContainer">
