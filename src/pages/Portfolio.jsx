@@ -30,12 +30,12 @@ export default function Portfolio() {
 
         <CardProject
           title="Tela inicial do Instagram"
-          txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+          txt="Aplicação desenvolvida puramente com css, tentando deixar o mais parecido possivel com o instagram"
           img="instagram"
         />
         <CardProject
           title="Tela inicial do Netflix"
-          txt="Aplicação desenvolvida com js html e css puro, visando implementar uma lógica com JS"
+          txt="Aplicação desenvolvida puramente com css, tentando deixar o mais parecido possivel com o Netflix"
           img="netflix"
         />
       </div>
