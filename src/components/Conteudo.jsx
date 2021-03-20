@@ -20,9 +20,9 @@ export function Conteudo() {
     <div className="conteudoContainer">
       {!menuIsOn && <Hamburguer />}
       <Switch>
-        <Route exact path={ROUTES.HOME} component={Home} />
         <Route path={ROUTES.SOBRE} component={Sobre} />
         <Route path={ROUTES.PORTFOLIO} component={Portfolio} />
+        <Route path="*" component={Home} />
       </Switch>
     </div>
   );
