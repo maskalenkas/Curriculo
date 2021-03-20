@@ -13,12 +13,16 @@ export function Hamburguer() {
   return (
     <div>
       {!menuIsOn ? (
-        <div className="hamburguerContainer">
-          <p onClick={handleButton}>HAMBURGUER</p>
+        <div className="hamburguerContainer" onClick={handleButton}>
+          <p>
+            <i className="fa fa-bars" aria-hidden="true"></i>
+          </p>
         </div>
       ) : (
         <div className="hamburguerContainerDesativado" onClick={handleButton}>
-          Menu
+          <i className="fa fa-arrow-left" aria-hidden="true">
+            Menu
+          </i>
         </div>
       )}
     </div>

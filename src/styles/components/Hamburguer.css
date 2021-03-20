@@ -1,15 +1,37 @@
 .hamburguerContainer {
   position: fixed;
-  left: 0;
-  top: 0;
-  height: 50px;
-  width: 100PX;
-  background: greenyellow;
+  left: 1rem;
+  top: 1rem;
+  padding: .5rem 1rem;
+  background-color: var(--p5);
   z-index: 2;
+  font-weight: 999;
+  color: white;
+  opacity: .4;
+  transition: 1s;
+
+  border-radius: 2rem;
+  cursor:pointer;
+}
+
+.hamburguerContainer i {
+  font-size: 1.5rem;
+}
+
+.hamburguerContainer:hover {
+  opacity: 1;
 }
 
 .hamburguerContainerDesativado {
-  background: yellow;
-  width: 100%;
-  text-align: center;
+  background: var(--p5);
+  width: 90%;
+  margin: auto;
+  padding: .5rem .5rem;
+
+  border-radius: 2rem;
+}
+
+.hamburguerContainerDesativado i {
+font-size: 1.2rem;
+cursor: pointer;
 }
