@@ -1,8 +1,15 @@
 .hamburguerContainer {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 50px;
   width: 100PX;
   background: greenyellow;
+  z-index: 2;
+}
+
+.hamburguerContainerDesativado {
+  background: yellow;
+  width: 100%;
+  text-align: center;
 }

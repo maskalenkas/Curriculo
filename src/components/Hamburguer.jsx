@@ -12,8 +12,16 @@ export function Hamburguer() {
   }
 
   return (
-    <div className="hamburguerContainer">
-      <p onClick={handleButton}>HAMBURGUER</p>
+    <div>
+      {!menuIsOn ? (
+        <div className="hamburguerContainer">
+          <p onClick={handleButton}>HAMBURGUER</p>
+        </div>
+      ) : (
+        <div className="hamburguerContainerDesativado" onClick={handleButton}>
+          Menu
+        </div>
+      )}
     </div>
   );
 }
