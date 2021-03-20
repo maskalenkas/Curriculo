@@ -8,7 +8,6 @@ export function Hamburguer() {
 
   function handleButton() {
     setMenuIsOn(!menuIsOn);
-    console.log(menuIsOn);
   }
 
   return (

@@ -12,9 +12,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import IconsSocialMedia from '../components/IconsSocialMedia';
 
 function App() {
-  console.log(window.screen.width);
-  console.log(window.screen.height);
-
   const { setIsCelular, isCelular, menuIsOn, setMenuIsOn } = useContext(MenuContext);
 
   // Definindo que é tela de celular
@@ -26,7 +23,7 @@ function App() {
     <Router>
       {/* Removendo o menu esquerdo caso ele esteja como off */}
       <div className={`${menuIsOn ? 'container' : ''}`}>
-        {/* Left */}
+        {/* Se for celular, vai mostrar o menu hamburguer */}
         <aside className={`${menuIsOn && 'menuIsOn'}`}>
           {isCelular && menuIsOn ? (
             <>
@@ -36,11 +33,17 @@ function App() {
               <IconsSocialMedia />
             </>
           ) : (
+            <></>
+          )}
+          {/* Se não for, não vai mostrar o hamburguer */}
+          {!isCelular ? (
             <>
               <Profile />
               <Menu />
               <IconsSocialMedia />
             </>
+          ) : (
+            false
           )}
         </aside>
 

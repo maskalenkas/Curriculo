@@ -10,7 +10,7 @@ import { MenuContext } from '../context/MenuContext';
 import { Hamburguer } from '../components/Hamburguer';
 
 export default function Home() {
-  const { buttonAtual, setButtonAtual, menuIsOn } = useContext(MenuContext);
+  const { isCelular, setButtonAtual, menuIsOn } = useContext(MenuContext);
 
   useEffect(() => {
     setButtonAtual('btn1');
@@ -18,6 +18,7 @@ export default function Home() {
 
   return (
     <div className="homeContainer">
+      {console.log('Componente home!')}
       {!menuIsOn && <Hamburguer />}
       <div className="conteudoPaginaContainer">
         <div className="textosPaginaContainer">
